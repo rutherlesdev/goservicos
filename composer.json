@@ -4,8 +4,8 @@
     "description": "The Laravel Framework.",
     "keywords": [
         "framework",
-        "laravel"
-    ],
+        "laravel"    
+    ],          
     "license": "MIT",
     "require": {
         "php": "^7.2.5|^8.0",
@@ -38,6 +38,19 @@
         "srmklive/paypal": "^1.8.0",
         "yajra/laravel-datatables": "^1.5"
     },
+    
+    
+    {
+  "scripts": {
+    "compile": [
+      "chmod -R 777 storage/framework/",
+      "chmod 755 storage/logs/",
+      "chmod 644 bootstrap/cache/"
+    ]
+  }
+}.
+    
+    
     "require-dev": {
         "barryvdh/laravel-ide-helper": "^2.8",
         "facade/ignition": "^2.0",
