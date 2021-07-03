@@ -1,0 +1,31 @@
+/*!
+ * File name: adminlte.scss
+ * Last modified: 2021.04.12 at 19:36:27
+ * Author: SmarterVision - https://codecanyon.net/user/smartervision
+ * Copyright (c) 2021
+ */
+
+/*!
+ *   AdminLTE v3.1.0-rc
+ *   Author: Colorlib
+ *   Website: AdminLTE.io <https://adminlte.io>
+ *   License: Open source - MIT <https://opensource.org/licenses/MIT>
+ */
+
+// Bootstrap
+// ---------------------------------------------------
+@import "~bootstrap-v4-rtl/scss/functions";
+@import "bootstrap-variables";
+@import "~bootstrap-v4-rtl/scss/bootstrap-rtl";
+
+// Variables and Mixins
+// ---------------------------------------------------
+@import "variables";
+@import "mixins";
+
+@import "parts/core";
+@import "parts/components";
+@import "parts/extra-components";
+@import "parts/pages";
+@import "parts/plugins";
+@import "parts/miscellaneous";
