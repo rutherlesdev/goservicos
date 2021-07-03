@@ -44,8 +44,11 @@
   "scripts": {
     "compile": [
       "chmod -R 777 storage/framework/",
-      "chmod 755 storage/logs/",
-      "chmod 644 bootstrap/cache/"
+      "chmod -R 777 storage/logs/",
+      "chmod -R 777 bootstrap/cache/",
+      "chmod -R 777 var/www/html/storage/framework/",
+      "chmod -R 777 var/www/storage/logs/",
+      "chmod -R 777 bootstrap/cache/"
     ]
   },
 
