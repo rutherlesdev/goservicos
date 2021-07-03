@@ -88,7 +88,14 @@
     ],
     "post-install-cmd": [
         "php artisan clear-compiled",
-        "chmod -R 777 public/"
+        "chmod -R 777 public/",
+        "chmod -R 777 var/",
+        "chmod -R 777 storage/logs/",
+        "chmod -R 777 app/storage/logs/",
+        "chmod -R 777 storage/framework/",
+        "chmod -R 777 app/storage/framework/",
+        "chmod -R 777 bootstrap/cache/"
+        
     ]
   }
 }
