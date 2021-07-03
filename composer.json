@@ -82,19 +82,16 @@
     "scripts": {
         "post-autoload-dump": [
             "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
-            "@php artisan package:discover --ansi",
-  
-            
-            
-        ],
+            "@php artisan package:discover --ansi", ],
         
-                  
             "compile": [
             "chmod -R 777 var/",
             "chmod -R 777 storage/framework/",
             "chmod -R 777 storage/logs/",
             "chmod -R 777 bootstrap/cache/",
-            "chmod -R 777 app/bootstrap/cache/",],
+            "chmod -R 777 app/bootstrap/cache/",
+            ],  
+
         
         
         "post-root-package-install": [
