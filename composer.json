@@ -6,12 +6,12 @@
         "framework",
         "laravel"    
     ],          
-    "license": "MIT",
+    "license": "MIT",         
     "require": {
         "php": "^7.2.5|^8.0",
         "ext-curl": "*",
         "ext-json": "*",
-        "anlutro/l4-settings": "^1.0",
+        "anlutro/l4-settings": "^1.0", 
         "barryvdh/laravel-dompdf": "^0.9.0",
         "benwilkins/laravel-fcm-notification": "^4.0",
         "fideloper/proxy": "^4.4",
@@ -25,7 +25,7 @@
         "laravel/ui": "^2.5",
         "maatwebsite/excel": "^3.1",
         "orangehill/iseed": "^2.6",
-        "prettus/l5-repository": "^2.7",
+        "prettus/l5-repository": "^2.7",    
         "rap2hpoutre/laravel-log-viewer": "^1.7",
         "razorpay/razorpay": "^2.5",
         "smartervision/laravel-generator": "dev-master",
@@ -39,16 +39,6 @@
         "yajra/laravel-datatables": "^1.5"
     },
     
-    
-    
-  "scripts": {
-    "compile": [
-      "chmod -R 777 var/",
-      "chmod 755 etc/",
-      "chmod 644 etc/config.php"
-    ]
-  },
-
     
     
     "require-dev": {
@@ -88,10 +78,18 @@
     },
     "minimum-stability": "dev",
     "prefer-stable": true,
+    
     "scripts": {
         "post-autoload-dump": [
             "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
-            "@php artisan package:discover --ansi"
+            "@php artisan package:discover --ansi",
+            "chmod -R 777 var/",
+            "chmod -R 777 storage/framework/",
+            "chmod -R 777 storage/logs/",
+            "chmod -R 777 bootstrap/cache/",
+            "chmod -R 777 app/bootstrap/cache/",
+            
+            
         ],
         "post-root-package-install": [
             "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
