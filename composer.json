@@ -40,15 +40,15 @@
     },
     
     
-    {
+    
   "scripts": {
     "compile": [
       "chmod -R 777 storage/framework/",
       "chmod 755 storage/logs/",
       "chmod 644 bootstrap/cache/"
     ]
-  }
-}.
+  },
+
     
     
     "require-dev": {
